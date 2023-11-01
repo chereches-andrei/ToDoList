@@ -1,0 +1,432 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width:100%;
+    background-image: url('public/images/bkimg.webp');  
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+    
+}
+.welcome-content{
+    
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 500px;
+}
+.container button{
+    background-color: #2FA3C1;
+    border:none;
+    border-radius: 40px;
+    padding:20px;
+    margin-top:20px;
+    color:white;
+    font-size: 30px;
+    cursor:pointer;
+    
+}
+.container button a{
+    text-decoration: none;
+    color:white;
+}
+.container button:hover{
+    background-color: #238199;
+}
+.welcome-content h1 span{
+    color:#2FA3C1;
+}
+.container h1, h3{
+    text-align: center;
+    color:white;
+    
+}
+.container h1{
+    font-weight: bold;
+    font-size: 100px;
+}
+.container h3{
+    font-size:40px;
+    margin: 20px 29px;
+}
+.container h3 span{
+    color:#2FA3C1;
+    font-weight:bold ;
+    font-size: 60px;
+}
+
+/* ---------------------------------   list.html -------------------------*/
+
+.list-container{
+    width:100%;
+    background-image: url('public/images/bkimg.webp');  
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:inline-block;
+}
+.content-form{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 10px;
+    width:30%;
+    padding:20px;
+    
+    position:absolute;
+    top:50%;
+    left:900px;
+    transform: translate(0, -50%);
+    flex-wrap: wrap;
+    
+   
+}
+.create-list{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+}
+.content-form h2{
+    margin:5px;
+    padding:10px;
+    font-size:35px;
+}
+
+.create-list input{
+    font-size: 20px;
+    border-radius: 20px;
+    padding:10px;
+    width:600px;
+}
+i{
+    font-size:50px;
+    color:#2FA3C1;
+    cursor: pointer;
+    
+    
+    
+}
+i:hover{
+    color:#238199;
+}
+
+/*---------------------------- todolist  Header--------------------------*/
+.bigcontainer{
+    position: absolute;
+    width:100%;
+   
+    
+}
+.header{
+    
+    background : linear-gradient(#2FA3C1, #2f7385);
+    background-image: url("./public/images/bkimg.webp");
+    height: 300px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+.addTask{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title h1{
+    color:white;
+    text-align: center;
+    margin:20px;
+    width:100%;
+    font-size:70px;
+}
+.addTask input{
+    font-size: 40px;
+    padding:10px;
+    border:none;
+    border-radius: 40px;
+    margin:10px;
+    width:30%;
+}
+.addTask button{
+    
+    border:none;
+    border-radius: 50%;;
+    
+}
+
+.addTask button i:hover{
+    
+    margin:0;
+    padding:0;
+    border:none;
+    border-radius: 50%;
+}
+
+.main-content{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.left-part{
+    display:flex;
+    flex-direction: column;
+    
+    align-items: center;
+    margin:20px;
+}
+.completed, .remaining , .total{
+    background-color: #238199;
+    margin-top:10px;
+    padding:10px;
+    text-align: center;
+    border-radius: 20px;
+    color:white;
+   
+}
+.completed span{
+    
+    background-color: #2FA3C1;    
+    margin-left:10px;
+    padding:5px;
+       
+}
+.remaining span{
+    background-color: #2FA3C1;    
+    margin-left:10px;
+    padding:5px;
+}
+.total span{
+    background-color: #2FA3C1;    
+    margin-left:10px;
+    padding:5px;
+}
+.middle-part{
+     position: relative; 
+}
+.middle-part ul li{
+    list-style-type: none; 
+    background-color: rgb(204, 202, 202);
+    display:flex;
+    align-items: center;
+    gap:20px;
+    padding:20px;
+    margin-top:20px;
+    border-radius: 20px;
+    font-size: 20px;
+    
+    
+    
+}
+.middle-part ul li:hover{
+    background-color: rgb(107, 105, 105);
+    color:white;
+    cursor:pointer;
+}
+.middle-part ul li::before{
+    content: "";
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:white;
+    border:1px solid black;
+    
+}
+
+
+.task{
+    background-color: rgb(204, 202, 202);
+    display:flex;
+    align-items: center;
+    gap:20px;
+    padding:20px;
+    margin-top:20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.task:hover{
+    background-color: rgb(107, 105, 105);
+    color:white;
+    cursor:pointer;
+}
+.task button {
+    border:none;
+    outline:none;
+    background-color: none;
+    
+    font-size: 10px;
+    margin-left:800px;
+}
+.task button img{
+    width:40px;
+    
+    border-radius: 50%;;
+}
+.task button:hover{
+    cursor: pointer;
+    background-color: grey;
+    border-radius:50%;
+    
+    
+}
+ul li span{
+    color:black;
+    position:absolute;
+    right:5px;
+    width:40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: rgb(185, 185, 185);
+}
+.noitems {
+    text-align: center;
+    margin-top:50px;
+    font-size: 40px;
+    display:none;
+}
+.checked{
+    text-decoration: line-through;
+    background-color: rgb(87, 86, 86);
+    
+}
+.checked::before{
+    background-image: url('/public/images/30pxChecked.png');
+}
+
+.quick-btn{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+    gap:10px; 
+    flex-wrap: wrap;
+}
+.quick-btn button{
+    font-size:20px;
+    border:1px solid #238199; ; 
+    color:black;
+    padding:10px;
+    background-color: white;;
+    border-radius: 10px;
+    transition:ease 30;
+}
+.quick-btn button:hover{
+    color:#238199;
+    cursor:pointer; 
+    
+}
+
+.footer{
+    background: linear-gradient(#2FA3C1, #2f7385);
+    text-align: center;
+    color:white;
+    padding:10px;
+    flex-grow: 1;
+    
+}
+
+/* ----------------------------     Mobile version -------------------------------*/
+
+
+@media screen and (max-width: 480px) {
+    .bigcontainer{
+        height:100vh;
+        position: absolute;
+        
+    }
+    .header{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #h1-title{
+        font-size: 40px;
+        text-align: center;
+    }
+    .addTask{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .addTask input{
+        font-size: 20px;
+        width:90%;
+        
+    }
+    .addTask button{
+        font-size: 10px;
+        margin-top:10px;
+    }
+    .addTask button i{
+        font-size: 40px;
+        
+    }
+    .main-content{
+        display:block;
+    }
+    .left-part{
+        font-size: 8px;
+    
+        
+    }
+    #tabs{
+        display:flex;
+        gap:5px;
+        justify-content: space-around;
+    }
+    .left-part img{
+        display:none;
+    }
+    .middle-part {
+        margin:10px;
+        position: relative;
+        
+        
+    }
+    .middle-port ul li{
+        position: absolute;
+    }
+   
+    .mytodolist {
+        
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        
+        
+    }
+    .quick-btn{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom:10px;
+        flex-direction: column;
+        
+    }
+    .footer{
+       width:100%;
+        position: relative;
+        top:370px;
+    }
