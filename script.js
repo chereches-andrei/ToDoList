@@ -1,70 +1,11 @@
 
 
-/*const input = document.querySelector('#type')
-const add = document.querySelector('#add');
-const task = document.querySelector('#task');
-const middle = document.querySelector('#middle')
-const remove = document.querySelector(".remove");
-const btnx = document.querySelector("#btnx");
-const removeall = document.querySelector('#removeAll');
-
-removeall.addEventListener('click', ()=>{
-    
-        task.removeChild(input)
-    
-})
-
-function addTask(){
-    if(input.value === ''){
-        input.setAttribute('placeholder', "No empty spaces")
-        input.style.backgroundColor = 'red';
-
-    } else{
-        //let li = document.createElement('li')
-        //ul.appendChild(li)
-        //li.innerText = input.value;
-
-        let div = document.createElement('div');
-        middle.appendChild(div);
-        div.classList.add('task');
-        let box = document.createElement('input');
-        div.appendChild(box);
-        box.setAttribute('type', 'checkbox');
-        
-        let h4 = document.createElement('h4');
-        div.appendChild(h4);
-        h4.innerText = input.value;
-        let btn = document.createElement('button');
-        div.appendChild(btn);
-        btn.classList.add('remove');
-        let img = document.createElement('img');
-        btn.appendChild(img);
-        img.setAttribute('src', 'public/images/closeXtranspartent.png')
-        
-
-        
-        
-    }
-    
-}
-add.addEventListener('click',addTask);
-
-btnx.addEventListener('click', ()=>{
-    
-        input.toggleAttribute('checkbox')
-   
-    
-})
-
-*/
-// list 
-
 
 const ul = document.querySelector('.mytodolist')
 const noitems = document.querySelector('.noitems')
 const total = document.querySelector('.totaltasks')
 const add = document.querySelector('#type')
-
+const quickBtn = document.querySelector('#quick-btn')
 
 $("#add").click(additems)
 
@@ -81,10 +22,14 @@ function additems(){
        li.appendChild(span)
        span.classList.add('theX')
        span.innerHTML = "\u00d7"  
+       if(quickBtn.style.display = 'none'){
+        quickBtn.style.display = 'block'
+       } 
+       
+
     }
     add.value = '';
 }
-
 
 
 // the "Mark as done" button checkes all tasks functionality
@@ -126,6 +71,7 @@ $('#type').keypress(function(e){
 $('#removeAll').click(function(e){
     if(e.type === "click" ){
         $(".mytodolist li").remove()
+        quickBtn.style.display = 'none'
     }
 })
 
